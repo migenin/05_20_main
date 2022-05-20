@@ -1,0 +1,143 @@
+﻿@charset "utf-8";
+
+* {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            height: auto;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        @media (max-width:599px) {
+            header {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #headbox {
+                width: 100%;
+                height: 100px;
+                margin: 0 auto;
+            }
+
+            #headbox .small {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                width: 131px;
+                height: 32px;
+                display: inline-block;
+            }
+
+            .logo img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .a {
+                display: block;
+            }
+
+            .b {
+                display: none;
+            }
+
+            nav {
+                width: 100%;
+                height: 32px;
+            }
+
+            nav>ul {
+                font-family: "Arial";
+                font-weight: bold;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            nav>ul>li>a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: 10px;
+            }
+
+            nav ul li a:hover {
+                color: rgb(128, 0, 145);
+                background-color:#fff;
+            }
+
+            .small>img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .small>img:hover {
+                opacity: 0.3;
+                cursor: pointer;
+            }
+
+            .b img:hover {
+                opacity: 0.3;
+                cursor: pointer;}
+
+             footer {
+                width: 100%;
+                height: 430px;
+                background-image: url("../img/footer_img-1.jpg");
+                color: #fff;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            #fbox {
+                width: 100%;
+                height: 200px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #fbox>img {
+                width: 207px;
+                height: 50px;
+                margin: 5px;
+            }
+
+            #fimg>a>img {
+                width: 50px;
+                height: 50px;
+            }
+
+            #fimg>a>img:hover {
+                opacity:0.7;
+            } 
+        }
